@@ -1,0 +1,48 @@
+<%= render 'navbar' %>
+
+<div class="container rounded mt-3">
+
+  <%= render 'title' %>
+
+  <%= render 'tabs' %>
+
+
+  <div class="mt-2">
+
+    <div class="pb-1 mb-1 b-b-1">
+      <nav class="nav nav-inline">
+        <span class="nav-link">Sort By:</span>
+        <a class="nav-link" href="#">Optimal</a>
+        <a class="nav-link" href="#">Shop Popularity</a>
+        <span class="nav-link active" href="#">Price</span>
+      </nav>
+    </div>
+
+
+    <% 21.times do %>
+      <div class="row py-1 shop-item">
+        
+        <div class="col-sm-1">
+          <%= image_tag ['shop', 'shop1'].shuffle.first, class: "w-100" %> 
+        </div>
+
+        <div class="col-sm-6">
+          <h3 class="h6"><%= Faker::Company.name %></h3>
+          <div><a href="#">Samsung Galaxy S5</a></div>
+        </div>
+
+        <div class="col-sm-5 text-xs-right">
+          <span class="price">$<%= Faker::Number.between(700, 800) %></span>
+        </div>
+
+      </div>
+    <% end %>
+
+
+
+
+
+  </div>
+
+</div>
+

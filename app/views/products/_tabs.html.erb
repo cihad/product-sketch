@@ -1,0 +1,35 @@
+<div class="tabs mt-3">
+  <ul class="nav nav-tabs">
+    <li class='nav-item'>
+      <%= link_to_unless_current 'Overview', products_overview_path, class: 'nav-link' do %>
+        <%= link_to 'Overview', products_overview_path, class: 'nav-link active' %>
+      <% end %>
+    </li>
+    <li class='nav-item'>
+      <%= link_to_unless_current '567 comments', products_comments_path, class: 'nav-link' do %>
+        <%= link_to '567 comments', products_comments_path, class: 'nav-link active' %>
+      <% end %>
+    </li>
+    </li>
+    <li class='nav-item'>
+      <%= link_to_unless_current '21 shops', products_shops_path, class: 'nav-link' do %>
+        <%= link_to '21 shops', products_shops_path, class: 'nav-link active' %>
+      <% end %>
+    </li>
+
+
+    <li class="nav-item dropdown float-xs-right">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Other</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Forum</a>
+        <a class="dropdown-item" href="#">Medias</a>
+        <a class="dropdown-item" href="#">Specifications</a>
+        <a class="dropdown-item" href="#">Popularity</a>
+        <a class="dropdown-item" href="#">Generations</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+      </div>
+    </li>
+
+  </ul>
+</div>

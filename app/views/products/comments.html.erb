@@ -1,0 +1,36 @@
+<%= render 'navbar' %>
+
+<div class="container mt-3 rounded">
+  <div class="row">
+
+    <div class="col-sm-12">
+
+      <%= render 'title' %>
+
+      <%= render 'tabs' %>
+ 
+      <div class="comments mt-2">
+
+        <% ['jack', 'angelina', 'julia', 'mao', 'marie', 'minna', 'paul'].each do |user| %>
+
+          <div class="row py-1">
+            <div class="col-sm-2">
+              <%= image_tag "users/" + user, class: 'rounded-circle w-100' %>
+            </div>
+            <div class="col-sm-10">
+              <div><span class="font-weight-bold"><%= Faker::Name.name %></span> is <%= ['using', 'used'][rand 2] %></div>
+              <% Faker::Lorem.paragraphs(rand 1..4  ).each do |p| %>
+                <p><%= p %><p>
+              <% end %>
+            </div>
+          </div>
+        
+        <% end %>
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
+

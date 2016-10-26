@@ -1,0 +1,38 @@
+<%= render 'navbar' %>
+
+<div class="container rounded sct">
+  <div class="row">
+    <div class="col-sm-2">
+
+      <div class="card">
+        <%= image_tag 'vestel-logo-red.png', class: 'card-img-top img-fluid img-rounded' %>
+      </div>
+
+      <h2 class='h5'>Vestel</h2>
+      <ul class="nav nav-stacked">
+        <li class="nav-item">
+          <%= link_to 'Alternative 0', brands_show_path, class: 'nav-link' %>
+        </li>
+
+        <li class="nav-item">
+          <%= link_to 'Alternative 1', brands_alt1_path, class: 'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Alternative 2', brands_alt2_path, class: 'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Alternative 3', brands_alt3_path, class: 'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Alternative 4', brands_alt4_path, class: 'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Alternative 5', brands_alt5_path, class: 'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Alternative 6', brands_alt6_path, class: 'nav-link' %>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-sm-9 offset-sm-1">

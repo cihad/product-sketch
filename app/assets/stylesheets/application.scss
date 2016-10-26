@@ -13,3 +13,53 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap-custom";
+
+.sct {
+  margin-top: 50px
+}
+
+.category-section {
+  margin-top: 30px;
+}
+
+.horizontal-scrollable {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.horizontal-scrollable {
+  display: inline-block;
+}
+
+.category-title {
+  text-align: right;
+}
+
+.container {
+  width: 760px;
+  background: #fff;
+  padding: 30px;
+}
+
+ul.dot-spacer li:after { 
+  content: " \00b7";
+  margin-left: 1rem;
+}
+
+ul.dot-spacer li:last-child:after {
+  content: none;
+}
+
+.shop-item:hover {
+  background: #f0f0f0
+}
+
+.b-b-1 {
+  border-bottom: 1px solid $nav-tabs-border-color;
+}
+
+body {
+  background: #eee;
+}

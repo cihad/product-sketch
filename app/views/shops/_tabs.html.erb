@@ -1,0 +1,21 @@
+<div class="tabs mt-3">
+  <ul class="nav nav-tabs">
+    <li class='nav-item'>
+      <%= link_to_unless_current 'Products', shops_show_path, class: 'nav-link' do %>
+        <%= link_to 'Products', shops_show_path, class: 'nav-link active' %>
+      <% end %>
+    </li>
+    <li class='nav-item'>
+      <%= link_to_unless_current 'Location', shops_location_path, class: 'nav-link' do %>
+        <%= link_to 'Location', shops_location_path, class: 'nav-link active' %>
+      <% end %>
+    </li>
+    <li class='nav-item'>
+      <%= link_to_unless_current 'Comments', shops_comments_path, class: 'nav-link' do %>
+        <%= link_to 'Comments', shops_comments_path, class: 'nav-link active' %>
+      <% end %>
+    </li>
+
+
+  </ul>
+</div>
