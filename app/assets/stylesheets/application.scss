@@ -37,11 +37,17 @@
   text-align: right;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 760px;
+  }
+}
+
 .container {
-  width: 760px;
   background: #fff;
   padding: 30px;
 }
+
 
 ul.dot-spacer li:after { 
   content: " \00b7";
@@ -56,7 +62,7 @@ ul.dot-spacer li:last-child:after {
   background: #f0f0f0
 }
 
-.b-b-1 {
+.bb-1 {
   border-bottom: 1px solid $nav-tabs-border-color;
 }
 
