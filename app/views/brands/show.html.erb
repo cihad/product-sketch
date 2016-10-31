@@ -1,8 +1,19 @@
-<%= render 'left' %>
+<%= render 'navbar' %>
+
+<div class="container rounded mt-3">
+
+  <%= render 'title' %>
+
+  <%= render 'tabs' %>
+
+
+  <div class="mt-2">
 
       <section class='category-section'>
         
-        <h3 class="h5">TVs</h3>
+        <div class="hr-divider hr-divider-center mb-2">
+          <h3 class="h6 hr-divider-heading">TVs</h3>
+        </div>
 
         <div class="row">
           <div class="col-sm-3">
@@ -43,4 +54,5 @@
         </div>
       </section>
           
-<%= render 'right' %>
+  </div>
+</div>

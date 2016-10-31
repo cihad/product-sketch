@@ -1,0 +1,27 @@
+<div class="bb-1" style="margin: 0 -30px; padding: 0 30px">
+  <ul class="nav nav-tabs mt-3" style="position: relative; margin-bottom: -1px">
+    <li class='nav-item'>
+      <%= link_to_unless_current 'Overview', brands_show_path, class: 'nav-link' do %>
+        <%= link_to 'Overview', brands_show_path, class: 'nav-link active' %>
+      <% end %>
+    </li>
+
+
+    <li class="nav-item dropdown float-xs-right">
+      <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <%= image_tag "icons/more" %>
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Forum</a>
+        <a class="dropdown-item" href="#">Medias</a>
+        <a class="dropdown-item" href="#">Specifications</a>
+        <a class="dropdown-item" href="#">Popularity</a>
+        <a class="dropdown-item" href="#">Generations</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Support</a>
+      </div>
+    </li>
+
+  </ul>
+  
+</div>
