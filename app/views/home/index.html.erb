@@ -1,0 +1,39 @@
+<style type="text/css">
+html, body, #a {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#a {
+  display: table;
+}
+
+#b {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+  vertical-align: middle;
+}
+
+#content {
+  margin: auto;
+}
+</style>
+
+<div id="a">
+  <div id="b">
+    <div id="content">
+      <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+          <form action="<%= products_overview_path %>" method="get">
+            <input class="form-control form-control-lg" type="text" placeholder="Product, brand or shop" autofocus>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

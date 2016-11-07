@@ -1,4 +1,4 @@
-<div class="bb-1" style="margin: 0 -30px; padding: 0 30px">
+<div class="bb-1">
   <ul class="nav nav-tabs mt-3" style="position: relative; margin-bottom: -1px">
     <li class='nav-item'>
       <%= link_to_unless_current 'Overview', products_overview_path, class: 'nav-link' do %>
@@ -16,14 +16,10 @@
       <% end %>
     </li>
     <li class='nav-item'>
-      <%= link_to_unless_current '12234 using', products_shops_path, class: 'nav-link' do %>
-        <%= link_to '12234 using', products_shops_path, class: 'nav-link active' %>
-      <% end %>
+      <a class="nav-link">12234 using</a>
     </li>
     <li class='nav-item'>
-      <%= link_to_unless_current '21078 used', products_shops_path, class: 'nav-link' do %>
-        <%= link_to '21078 used', products_shops_path, class: 'nav-link active' %>
-      <% end %>
+      <a class="nav-link">21078 used</a>
     </li>
 
 

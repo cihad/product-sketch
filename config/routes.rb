@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'home/index'
+
+  get 'home_controller/index'
+
   get 'shops/show'
   get 'shops/location'
   get 'shops/comments'
@@ -26,7 +30,7 @@ Rails.application.routes.draw do
   # get 'brands/alt5'
   # get 'brands/alt6'
 
-  root 'brands#show'
+  root 'home#index'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
