@@ -45,11 +45,19 @@
   }
 }
 
-.container {
-  background: #fff;
-  padding: 50px;
+.py-5 {
+  padding-top: 50px;
+  padding-bottom: 50px; 
 }
 
+.px-5 {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.bg-white {
+  background: #fff;
+}
 
 ul.dot-spacer li:after { 
   content: " \00b7";

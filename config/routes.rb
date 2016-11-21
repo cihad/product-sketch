@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
-  get 'home/index'
+  get 'search/box'
+  get 'search/results'
 
+  get 'home/index'
   get 'home_controller/index'
 
   get 'shops/show'
