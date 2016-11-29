@@ -55,8 +55,24 @@
   padding-left: 50px;
 }
 
+.py-05 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.mp-50 {
+  margin: 0 -50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .bg-white {
   background: #fff;
+}
+
+.hover-color-faded:hover {
+  @extend .bg-faded;
+  text-decoration: none;
 }
 
 ul.dot-spacer li:after { 
